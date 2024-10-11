@@ -28,7 +28,23 @@ int complexOperation(int n) {
     // Using the lambdas to process the number
     cout << "Processing number: " << n << endl;
 
-   
+    // Check if the number is prime
+    if (isPrime(n)) {
+        cout << n << " is a prime number." << endl;
+    } else {
+        cout << n << " is not a prime number." << endl;
+    }
+
+    // Calculate the factorial of the number
+    int factResult = factorial(n);
+    cout << "Factorial of " << n << " is: " << factResult << endl;
+
+    // Calculate the nth Fibonacci number
+    int fibResult = fibonacci(n);
+    cout << n << "th Fibonacci number is: " << fibResult << endl;
+
+    // Return the sum of factorial and Fibonacci for complexity
+    return factResult + fibResult;
 }
 
 int main() {
