@@ -16,3 +16,12 @@ public:
         return count;
     }
 };
+
+// Initialize static member variable
+int Counter::count = 0;
+
+int main() {
+    Counter c1, c2, c3;
+    cout << "Number of objects created: " << Counter::getCount() << endl;
+    return 0;
+}
