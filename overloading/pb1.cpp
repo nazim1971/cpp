@@ -10,7 +10,7 @@ bool compare(int a, int b) {
 
 // Function to check if a is greater than 0
 bool compare(int a) {
-    return a > 2;
+    return a > 0;
 }
 
 // Function to check if a is odd (a % 2 != 0)
