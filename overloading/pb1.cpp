@@ -10,7 +10,7 @@ bool compare(int a, int b) {
 
 // Function to check if a is greater than 0
 bool compare(int a) {
-    return a > 0;
+    return a > 2;
 }
 
 // Function to check if a is odd (a % 2 != 0)
@@ -35,7 +35,13 @@ int main() {
         cout << "a is not greater than b" << endl;
     }
 
-  
+    // Check if a > 0
+    if (compare(a)) {
+        cout << "a is positive" << endl;
+    } else {
+        cout << "a is not positive" << endl;
+    }
+
     // Check if a is odd
     compare(); // You had missed a semicolon here
 
