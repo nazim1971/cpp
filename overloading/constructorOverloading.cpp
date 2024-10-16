@@ -29,7 +29,8 @@ public:
     }
 };
 
-int main() {      // Calls the default constructor
+int main() {
+    Rectangle rect1;       // Calls the default constructor
     Rectangle rect2(5);    // Calls the constructor with one parameter
     Rectangle rect3(4, 6); // Calls the constructor with two parameters
 
