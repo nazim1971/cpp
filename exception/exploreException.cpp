@@ -12,7 +12,15 @@ int main() {
         cout << "Enter name (1-3 words): ";
         getline(cin, name);
 
-       
+        // Count spaces to determine the number of words in the name
+        for (char ch : name) {
+            if (isspace(ch)) wordCount++;
+        }
+
+        // Validate word count
+        if (wordCount < 1 || wordCount > 3) {
+            throw runtime_error("Invalid Name. Must be 1-3 words.");
+        }
 
         // Input for country
         cout << "Enter country (Bangladesh only): ";
