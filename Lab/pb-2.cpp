@@ -9,3 +9,18 @@ protected:
 private:
     int privateMember = 20;
 };
+
+class Derived : public Base {
+public:
+    void showProtected() {
+        cout << "Protected Member: " << protectedMember << endl;
+        // Cannot access privateMember
+        // cout << "Private Member: " << privateMember << endl; // Error
+    }
+};
+
+int main() {
+    Derived obj;
+    obj.showProtected();
+    return 0;
+}
