@@ -11,3 +11,28 @@ public:
         cout << "Base class method." << endl;
     }
 };
+
+// Derived class
+class Derived : public Base {
+public:
+    // Overriding the base class function
+    void show() override {
+        cout << "Derived class method." << endl;
+    }
+};
+
+int main() {
+    // Base class pointer
+    Base* ptr;
+
+    // Derived class object
+    Derived d;
+
+    // Pointing base class pointer to derived class object
+    ptr = &d;
+
+    // Calling the function
+    ptr->show();  // Calls Derived class method
+
+    return 0;
+}
